@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-cloud-sleuth-server-three
+  cloud:
+    consul:
+      discovery:
+        register-health-check: false
+
+server:
+  port: 10003

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-cloud-sleuth-server-one
+  cloud:
+    consul:
+      discovery:
+        register-health-check: false
+
+
+server:
+  port: 10001
+
