@@ -11,9 +11,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableDiscoveryClient
 public class ServerOneApplication {
 
-//    -javaagent:/Users/mtluo/Documents/doc/femas/diaoyan/19/opentelemetry-javaagent.jar
-//-Dotel.traces.exporter=zipkin
-
     public static void main(String[] args) {
         SpringApplication.run(ServerOneApplication.class, args);
     }

@@ -13,11 +13,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.tencent.tsf</groupId>
-            <artifactId>femas-trace-opentelemetry</artifactId>
+            <groupId>com.demo</groupId>
+            <artifactId>opentelemetry-java-agent-extension</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/../../../../code/UGit/femas-trace-opentelemetry/test/target/femas-trace-opentelemetry-1.0-SNAPSHOT.jar</systemPath>
+            <systemPath>${project.basedir}/../../../opentelemetry-java-agent-extension/target/opentelemetry-java-agent-extension-1.0-SNAPSHOT.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
