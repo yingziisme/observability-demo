@@ -1,16 +1,13 @@
 spring:
   application:
-    name: spring-cloud-sleuth-client
+    name: micrometer-trace-client
   cloud:
     consul:
       discovery:
         register-health-check: false
-  sleuth:
-    sampler:
-      probability: 1
 
 server:
-  port: 10000
+  port: 10010
 
 
 management:

@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: micrometer-trace-server-one
+  cloud:
+    consul:
+      discovery:
+        register-health-check: false
+
+server:
+  port: 10011
+trace: false
+
+management:
+  tracing:
+    sampling:
+      probability: 1
+  health:
+    refresh:
+      enabled: false
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  trace:
+    http:
+      enabled: true

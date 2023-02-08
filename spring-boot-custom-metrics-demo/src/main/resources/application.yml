@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: custom-metrics
+server:
+  port: 10030
+

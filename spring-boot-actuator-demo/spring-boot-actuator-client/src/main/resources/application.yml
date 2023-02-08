@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: actuator-client
+  cloud:
+    consul:
+      discovery:
+        register-health-check: false
+
+server:
+  port: 10020
+
+management:
+  metrics:
+    export:
+      prometheus:
+        pushgateway:
+          enabled: true
+          base-url: http://172.17.0.1:9091
+  endpoints:
+    web:
+      exposure:
+        include: prometheus,health,info,metric

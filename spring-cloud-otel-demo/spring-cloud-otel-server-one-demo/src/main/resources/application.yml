@@ -5,12 +5,7 @@ spring:
     consul:
       discovery:
         register-health-check: false
-      host: 172.16.16.51
-  zipkin:
-    base-url: http://172.16.16.51:9411/
-  sleuth:
-    sampler:
-      probability: 1
+#      host: 172.16.16.51
 server:
   port: 10001
 
